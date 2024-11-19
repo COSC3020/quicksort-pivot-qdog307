@@ -16,8 +16,7 @@ equally likely, i.e. the input array is ordered randomly.
 Your answer must derive probabilities for choosing a good pivot and
 quantitatively reason with them.
 
-The definition of a good pivot is a point in an array where the array is split into two resonably sized parts that are somewhat balanced. The more balanced that they are the more effcient that the algorithm is. When looking at the method of leftmost gives us the probability of %50 it being a good pivot. When determining if its a good pivot the size of the split on both sides needs to be n/4 to 3n/4. With the leftmost we can do ((3n/4)-(n/4))/n, this is where we get the 50%. Then if we look at the medain of three method, the idea is that we have a better chance of picking a good pivot. When it comes to looking at a random array, when choosing three instead of one the probability increases close to 70%. From online readings the probability increases, so I belive that in a random array it is slightly better than just picking the leftmost. 
-
+The definition of a good pivot is a point in an array where the array is split into two resonably sized parts that are somewhat balanced. The more balanced that they are the more effcient that the algorithm is. When looking at the method of leftmost this gives the posisbilty of choosing an extreme pivot that would result in a sub array being highly unbalanced comapred to the other. What the median of three method does is help avoid these extreme values that can be seelcted. While it is not perfcet it allows for a better chance that the median is reasobly split as comapred to a randomly selected value. For this we are considering three values instead of one.  
 
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
